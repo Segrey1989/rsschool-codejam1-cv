@@ -6,25 +6,46 @@ html {
 }
 
 body {
-  height: 1550px;
   margin: 0;
 }
 
 #wrapper {
-    max-width:1024px;
-    width: 900px;
-    height: 1540px;
-    margin: 0 auto;
-    font-family: "Oxygen";
-    color: rgb(23, 25, 32);
-    background-color: rgb(149, 149, 197);
+  max-width:1024px;
+  width: 80%;
+  height: 1550px;
+  margin: 0 auto;
+  font-family: "Oxygen";
+  color: rgb(23, 25, 32);
+  background-color: rgb(149, 149, 197);
+  background-image: url("background.jpg");
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  border-radius: 15px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  display: block;
+  width: 80%;
+  height: 50px;
+  margin-left:10%;
+  background-color:black;
+  z-index: 5;
+}
+
+
+#name, #summary, #skills, #education, #english {
+  margin-top: 20px;
+  height: 250px;
+  background-color: #87CEFA;
+  border: 3px solid black;
+  border-radius: 15px;
 }
 
 #name {
-    height: 300px;
-    background-color: #87CEFA;
-    border: 1px solid black;
-    border-radius: 10px;
+  margin-top:50px;
+  height: 300px;
 }
 
 #name img {
@@ -39,21 +60,17 @@ body {
     border-radius: 5px;
 }
 
-#name section {
+#name img + div {
     position: relative;
     float: right;
     top: 20px;
-    right: 30%;
-}
-
- #name section {
+    right: 10%;
     font-weight: 600;
     letter-spacing: 6px;
     line-height: 1.5em;
 }
 
-
-#name section a {
+#name  img + div a {
     margin-top: 5px;
     display: block;
     color: rgb(23, 25, 32);
@@ -61,7 +78,6 @@ body {
     font-size: 1.2em;
     line-height: 1.8em;
 }
-
 
 #name  a:hover {
     position: relative;
@@ -71,23 +87,15 @@ body {
     font-weight: 900;
 }
 
-#summary, #skills, #education, #english {
-  margin-top: 20px;
-  height: 250px;
-  background-color: #87CEFA;
-  border: 1px solid black;
-  border-radius: 10px;
-}
-
 #summary h2, #skills h2, #education h2, #english h2 {
-  padding-left: 20px;
+  padding-left: 3%;
   font-size: 3em;
   font-weight:900;
   letter-spacing:3px;
 }
 
 #summary p, #skills p, #skills ul span, #english p {
-  padding-left: 40px;
+  padding-left: 4%;
   font-size: 1.4em;
   letter-spacing: 2px;
   text-indent: 30px;
@@ -103,14 +111,14 @@ body {
 }
 
 #education h3 {
-  padding-left: 20px;
+  padding-left: 3%;
   font-size: 2em;
   font-weight: 500;
   letter-spacing: 3px;
 }
 
 #education li {
-  padding-left: 20px;
+  padding-left: 4%;
   list-style-position: inside;
   font-size: 1.4em;
   letter-spacing: 2px;
@@ -126,6 +134,84 @@ body {
   color: rgb(73, 62, 172);
   font-size: 1.4em;
   font-weight: 900;
+}
+
+@media(max-width:640px){
+  #wrapper {
+    height: 2000px;
+  }
+
+  #name {
+    height: 450px;
+  }
+
+  #summary, #skills, #english{
+    height: 350px;
+  }
+
+  #education {
+    height: 500px;
+  }
+
+  #name img {
+    left: 22%;
+    float: none;
+}
+
+  #name img + div {
+    float: none;
+    left: 22%;
+    letter-spacing: 4px;
+    line-height: 1.2em;
+}
+
+#name  img + div a {
+    font-size: 0.8em;
+    line-height: 2em;
+}
+
+#name  a:hover {
+  font-weight: 600;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+}
+
+@media(min-width:641px) and (max-width: 800px){
+  #wrapper {
+    height: 1700px;
+  }
+
+  #name, #summary, #skills, #english{
+    height: 300px;
+  }
+
+  #education {
+    height: 400px;
+  }
+
+  #name img {
+    left: 8%;
+}
+
+  #name img + div {
+    right: 10%;
+    letter-spacing: 4px;
+    line-height: 1.2em;
+}
+
+#name  img + div a {
+    font-size: 0.9em;
+    line-height: 2em;
+}
+
+#name  a:hover {
+  font-weight: 600;
+  font-size: 1em;
+  font-weight: 600;
+}
+
 }
 
 
