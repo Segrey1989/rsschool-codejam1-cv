@@ -49,42 +49,42 @@ nav {
 }
 
 #name img {
-    position: relative;
-    float: left;
-    top: 20px;
-    left: 5%;
-    display: block;
-    height: 200px;
-    width: 150px;
-    border: 2px solid slategrey;
-    border-radius: 5px;
+  position: relative;
+  float: left;
+  top: 20px;
+  left: 5%;
+  display: block;
+  height: 200px;
+  width: 150px;
+  border: 2px solid slategrey;
+  border-radius: 5px;
 }
 
 #name img + div {
-    position: relative;
-    float: right;
-    top: 20px;
-    right: 10%;
-    font-weight: 600;
-    letter-spacing: 6px;
-    line-height: 1.5em;
+  position: relative;
+  float: right;
+  top: 20px;
+  right: 10%;
+  font-weight: 600;
+  letter-spacing: 6px;
+  line-height: 1.5em;
 }
 
 #name  img + div a {
-    margin-top: 5px;
-    display: block;
-    color: rgb(23, 25, 32);
-    text-decoration: none;
-    font-size: 1.2em;
-    line-height: 1.8em;
+  margin-top: 5px;
+  display: block;
+  color: rgb(23, 25, 32);
+  text-decoration: none;
+  font-size: 1.2em;
+  line-height: 1.8em;
 }
 
 #name  a:hover {
-    position: relative;
-    margin-left: -32px;
-    color: rgb(73, 62, 172);
-    font-size: 1.4em;
-    font-weight: 900;
+  position: relative;
+  margin-left: -32px;
+  color: rgb(73, 62, 172);
+  font-size: 1.4em;
+  font-weight: 900;
 }
 
 #summary h2, #skills h2, #education h2, #english h2 {
@@ -104,6 +104,15 @@ nav {
 
 #skills ul {
   list-style-type: none;
+}
+
+#skills ul a {
+  color: rgb(23, 25, 32);
+  text-decoration: none;
+}
+
+#skills ul a:hover {
+  color: rgb(73, 62, 172);
 }
 
 #education {
@@ -193,24 +202,24 @@ nav {
 
   #name img {
     left: 8%;
-}
+  }
 
   #name img + div {
     right: 10%;
     letter-spacing: 4px;
     line-height: 1.2em;
-}
+  }
 
-#name  img + div a {
+  #name  img + div a {
     font-size: 0.9em;
     line-height: 2em;
-}
+  }
 
-#name  a:hover {
-  font-weight: 600;
-  font-size: 1em;
-  font-weight: 600;
-}
+  #name  a:hover {
+    font-weight: 600;
+    font-size: 1em;
+    font-weight: 600;
+  }
 
 }
 
