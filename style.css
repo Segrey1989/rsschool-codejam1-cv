@@ -14,7 +14,7 @@ body {
 }
 
 #wrapper {
-  max-width:1024px;
+  max-width: 1024px;
   width: 80%;
   height: 1550px;
   margin: 0 auto;
@@ -37,7 +37,7 @@ nav {
 }
 
 nav div{
-  width:80%;
+  width: 80%;
   margin: 0 auto;
   background-color: rgb(149, 149, 197);
   border-radius: 10px;
@@ -52,7 +52,7 @@ nav a {
   font-size: 1.5em;
   color: rgb(23, 25, 32);
   font-weight: 900;
-  text-decoration:none;
+  text-decoration: none;
   opacity: 0.8;
 }
 
@@ -71,7 +71,7 @@ nav a:hover{
 }
 
 #name {
-  margin-top:60px;
+  margin-top: 60px;
   height: 300px;
 }
 
@@ -117,8 +117,8 @@ nav a:hover{
 #summary h2, #skills h2, #education h2, #english h2 {
   padding-left: 3%;
   font-size: 3em;
-  font-weight:900;
-  letter-spacing:3px;
+  font-weight: 900;
+  letter-spacing: 3px;
 }
 
 #summary p, #skills p, #skills ul span, #english p {
