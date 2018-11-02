@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+
+html {
+  font: 12px Verdana, Arial, sans-serif;
+  background-color: #E5EFF4;
+  background-image: url("background.jpg");
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#wrapper {
+  max-width: 1024px;
+  width: 80%;
+  height: 1550px;
+  margin: 0 auto;
+  font-family: "Oxygen";
+  color: rgb(23, 25, 32);
+  background-color: rgb(149, 149, 197);
+  background-image: url("background.jpg");
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  border-radius: 15px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 50px;
+  z-index: 5;
+}
+
+nav div{
+  width: 80%;
+  margin: 0 auto;
+  background-color: rgb(149, 149, 197);
+  border-radius: 10px;
+}
+
+nav a {
+  display: inline-block;
+  height: 50px;
+  box-sizing: border-box;
+   margin-left: 5%;
+  padding: 10px;
+  font-size: 1.5em;
+  color: rgb(23, 25, 32);
+  font-weight: 900;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+nav a:hover{
+  color: rgb(238, 246, 253);
+  background-color: rgb(23, 25, 32);
+  opacity: 1;
+}
+
+#name, #summary, #skills, #education, #english {
+  margin-top: 20px;
+  height: 250px;
+  background-color: #87CEFA;
+  border: 3px solid black;
+  border-radius: 15px;
+}
+
+#name {
+  margin-top: 60px;
+  height: 300px;
+}
+
+#name img {
+  position: relative;
+  float: left;
+  top: 30px;
+  left: 5%;
+  display: block;
+  height: 200px;
+  width: 150px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+#name img + div {
+  position: relative;
+  float: right;
+  top: 20px;
+  right: 10%;
+  font-weight: 600;
+  letter-spacing: 6px;
+  line-height: 1.5em;
+}
+
+#name  img + div a {
+  margin-top: 5px;
+  display: block;
+  color: rgb(23, 25, 32);
+  text-decoration: none;
+  font-size: 1.2em;
+  line-height: 1.8em;
+}
+
+#name  a:hover {
+  position: relative;
+  margin-left: -32px;
+  color: rgb(73, 62, 172);
+  font-size: 1.4em;
+  font-weight: 900;
+}
+
+#summary h2, #skills h2, #education h2, #english h2 {
+  padding-left: 3%;
+  font-size: 3em;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+
+#summary p, #skills p, #skills ul span, #english p {
+  padding-left: 4%;
+  font-size: 1.4em;
+  letter-spacing: 2px;
+  text-indent: 30px;
+  line-height: 1.4em;
+}
+
+#skills ul {
+  list-style-type: none;
+}
+
+#skills ul a {
+  color: rgb(23, 25, 32);
+  text-decoration: none;
+}
+
+#skills ul a:hover {
+  color: rgb(73, 62, 172);
+}
+
+#education {
+  height: 400px;
+}
+
+#education h3 {
+  padding-left: 3%;
+  font-size: 2em;
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+
+#education li {
+  padding-left: 4%;
+  list-style-position: inside;
+  font-size: 1.4em;
+  letter-spacing: 2px;
+  line-height: 1.4em;
+}
+
+#english a {
+  color: rgb(23, 25, 32);
+  text-decoration: none;
+}
+
+#english a:hover{
+  color: rgb(73, 62, 172);
+  font-size: 1.4em;
+  font-weight: 900;
+}
+
+@media(max-width:640px){
+  nav a {
+    height: 30px;
+    margin-left: 1%;
+    padding: 10px;
+    font-size: 0.7em;
+    font-weight: 300;
+  }
+
+  #wrapper {
+    height: 2000px;
+  }
+
+  #name {
+    margin-top: 40px;
+    height: 450px;
+  }
+
+  #summary, #skills, #english{
+    height: 350px;
+  }
+
+  #education {
+    height: 500px;
+  }
+
+  #name img {
+    left: 22%;
+    float: none;
+}
+
+  #name img + div {
+    float: none;
+    left: 22%;
+    letter-spacing: 4px;
+    line-height: 1.2em;
+}
+
+#name  img + div a {
+    font-size: 0.8em;
+    line-height: 2em;
+}
+
+#name  a:hover {
+  font-weight: 600;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+}
+
+@media(min-width:641px) and (max-width: 865px){
+  nav a {
+    height: 40px;
+    margin-left: 2%;
+    padding: 10px;
+    font-size: 1.1em;
+    font-weight: 600;
+  }
+
+  #wrapper {
+    height: 1700px;
+  }
+
+  #name, #summary, #skills, #english{
+    height: 300px;
+  }
+
+  #education {
+    height: 400px;
+  }
+
+  #name img {
+    left: 8%;
+  }
+
+  #name img + div {
+    right: 10%;
+    letter-spacing: 4px;
+    line-height: 1.2em;
+  }
+
+  #name  img + div a {
+    font-size: 0.9em;
+    line-height: 2em;
+  }
+
+  #name  a:hover {
+    font-weight: 600;
+    font-size: 1em;
+    font-weight: 600;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
